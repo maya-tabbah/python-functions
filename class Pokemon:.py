@@ -93,20 +93,20 @@ print(normal_pokemon)
 #Write a function get_evolutionary_line() that takes in a Pokemon object starter_pokemon as a parameter.
 #The function should return a list of itself and the Pokemon that the starter_pokemon can evolve into.
 
-def get_evolutionary_line(starter_pokemon):
-    ev_types = []
+# def get_evolutionary_line(starter_pokemon):
+#     ev_types = []
     
 	
  
-charizard = Pokemon("Charizard", ["fire", "flying"])
-charmeleon = Pokemon("Charmeleon", ["fire"], charizard)
-charmander = Pokemon("Charmander", ["fire"], charmeleon)
+# charizard = Pokemon("Charizard", ["fire", "flying"])
+# charmeleon = Pokemon("Charmeleon", ["fire"], charizard)
+# charmander = Pokemon("Charmander", ["fire"], charmeleon)
 
-charmander_list = get_evolutionary_line(charmander)
-print(charmander_list)
+# charmander_list = get_evolutionary_line(charmander)
+# print(charmander_list)
 
-charmeleon_list = get_evolutionary_line(charmeleon)
-print(charmeleon_list)
+# charmeleon_list = get_evolutionary_line(charmeleon)
+# print(charmeleon_list)
 
-charizard_list = get_evolutionary_line(charizard)
-print(charizard_list)
+# charizard_list = get_evolutionary_line(charizard)
+# print(charizard_list)
