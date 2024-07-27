@@ -76,3 +76,40 @@ node_1.next = node_2
 print(node_1.value, "->", node_1.next.value)
 print(node_2.value, "->", node_2.next)
 
+# Write a function add_first() that takes in a head of a linked list and a new_node from the Node class as parameters.
+# It should insert new_node as the new head of the linked_list. The function returns new_node.
+
+def add_first(head, new_node):
+    new_node.next = head
+    return new_node
+    
+print(node_1.value, "->", node_1.next.value)
+new_node = Node("Ditto")
+node_1 = add_first(node_1, new_node)
+print(node_1.value, "->", node_1.next.value)
+
+
+# Write a function get_tail() that takes in the head of a linked list as a parameter
+# It should print out the value of the tail of the list.
+# If the list is empty (head is None), return None.
+# Note: The "tail" of a list is the last element in the linked list. Equivalent to lst[-1] in a normal list.
+
+def get_tail(head):
+   current = head
+   while current:
+        if current.next == None:
+           return current.value
+        current = current.next
+              
+num1 = Node("a")
+num2 = Node("b")
+num3 = Node("c")
+num1.next = num2
+num2.next = num3       
+head = num1
+tail = get_tail(num1)
+print(tail)
+
+#Using the Node class, write a function ll_replace() that takes a head of a linked list and two values, original and replacement as parameters.
+#The function updates any node with value original to have value replacement.
+
